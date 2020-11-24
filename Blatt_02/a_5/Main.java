@@ -8,24 +8,33 @@ public class Main {
 		int var2 = rand();
 		int var3 = rand();
 		
-		int[]array = new int[3];
-		
-		array[0] = var1;
-		array[1] = var2;
-		array[2] = var3;
-		
-		int min = var1,max = var1;
-		
-		for(int i=0;i<array.length;i++) {
-			if(min > array[i]) {
-				min = array[i];
+		if(var1 < var2) {
+			if (var1 < var3) {
+				System.out.println("var 1 am kleinsten");
+			} else {
+				System.out.println("var 3 am kleinsten");
 			}
-			if(max < array[i]) {
-				max = array[i];
+		} else {
+			if (var2 < var3) {
+				System.out.println("var 2 am kleinsten");
+			} else {
+				System.out.println("var 3 am kleinsten");
 			}
 		}
-		System.out.println(min);
-		System.out.println(max);
+		
+		if(var1 > var2) {
+			if (var1 > var3) {
+				System.out.println("var 1 am groessten");
+			} else {
+				System.out.println("var 3 am groessten");
+			}
+		} else {
+			if (var2 > var3) {
+				System.out.println("var 2 am groessten");
+			} else {
+				System.out.println("var 3 am groessten");
+			}
+		}
 	}
 	
 	public static int rand() {
