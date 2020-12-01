@@ -1,35 +1,22 @@
 package a_2;
 
-import java.util.Scanner;
+import java.util.Arrays;
 
 public class Main {
 	
 	public static void main(String[]args) {
-		Scanner scanner = new Scanner(System.in);
-		String zeile = new String();
-		zeile = scanner.nextLine();
-		int s = 0;
+		int zahl = 1099;
 		
-		try {
-			s = Integer.valueOf(zeile);
-		} catch (java.lang.NumberFormatException e) {
-			System.out.println("Es muss eine Zahl eingegeben werden!");
+		String zahlString = String.valueOf(zahl);
+				
+		int[] z = new int[zahlString.length()];
+		
+		for (int i = 0; i < zahlString.length(); i++) {
+		    z[i] = zahlString.charAt(i) - '0';
 		}
 		
-		boolean fertig = false;
-		
-		while(!fertig) {
-			int stelle = 10;
-			int i=0;
-			
-			while(s%stelle != 0) {
-				s++;
-				i++;
-			}
-			
-			
-		}
-		
+		System.out.println(z.length);
+		System.out.println(Arrays.toString(z));
 		
 	}
 
