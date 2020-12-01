@@ -25,10 +25,10 @@ public class Main {
 		}
 		
 		for(int i = 0; i<wert.length; i++) {
-			if (wert[i] <= zahl) {// + 0.001) {
+			if (wert[i] <= zahl + 0.001) {
 				System.out.println(zahl);
 				anzahl[i] += 1;
-				Math.round(zahl -= wert[i]);
+				zahl -= wert[i];
 				System.out.println(zahl);
 				i -= 1;
 			}
