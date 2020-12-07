@@ -15,10 +15,5 @@ public class Main {
 			c[i] = s.charAt(a[i]);
 			System.out.println(a[i] + ": " + c[i]);
 		}
-		
-		
-		
-		
-		
 	}
 }
