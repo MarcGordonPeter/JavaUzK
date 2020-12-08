@@ -7,17 +7,25 @@ public class Main {
 	public static void main(String[]args) {
 		int zahl = 1099;
 		
-		String zahlString = String.valueOf(zahl);
-				
-		int[] z = new int[zahlString.length()];
-		
-		for (int i = 0; i < zahlString.length(); i++) {
-		    z[i] = zahlString.charAt(i) - '0';
+		int i = 1;
+		int div = 10;
+		while(zahl > div) {
+			i++;
+			div *= 10;
 		}
 		
-		System.out.println(z.length);
-		System.out.println(Arrays.toString(z));
+		div /= 10;
 		
+		int[]z = new int[i];
+		
+		for(int j=0;j<z.length;j++) {
+			z[j] = zahl / div;
+			zahl -= z[j] * div;
+			div /= 10;
+		}
+		
+		System.out.println(i);
+		System.out.println(Arrays.toString(z));
 	}
 
 }
