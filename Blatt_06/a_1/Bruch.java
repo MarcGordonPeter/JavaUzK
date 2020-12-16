@@ -46,7 +46,7 @@ public class Bruch {
 	}
 	
 	boolean groesser_als(int f) {
-		double b = zaehler / nenner;
+		double b = (double)zaehler/(double)nenner; //zaehler/nenner = int
 		if (b > (double)f) {
 			return true;
 		} else {

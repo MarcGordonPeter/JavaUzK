@@ -3,7 +3,7 @@ package a_1;
 public class Main {
 
 	public static void main(String[]args) {
-		Bruch a = new Bruch(4,3);
+		Bruch a = new Bruch(5,1);
 		Bruch b = new Bruch(1,5);
 		Bruch c = new Bruch(1,0);
 		int mult = 5;
@@ -15,10 +15,11 @@ public class Main {
 		System.out.println("a ist groesser als b: " + a.groesser_als(b));
 		System.out.println("b ist groesser als a: " + b.groesser_als(a));
 		
-		
+		/*
 		System.out.println("a*5:");
 		a.multipliziere(5);
 		a.print();
+		*/
 		
 		System.out.println("b*a:");
 		b.multipliziere(a);
