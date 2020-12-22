@@ -1,4 +1,4 @@
-package a_1;
+package a_3;
 
 public class Bruch {
 	int zaehler;
@@ -59,4 +59,47 @@ public class Bruch {
 			return false;
 		}
 	}
+	
+	void kuerze() {
+		if (zaehler < nenner) {
+			int a = nenner,b = zaehler;
+			if(nenner < 0) {
+				a = nenner * -1;
+			}
+			if(zaehler < 0) {
+				b = zaehler * -1;
+			}
+			System.out.println(ggT(a,b));
+		} else {
+			int a = zaehler,b = nenner;
+			if(nenner < 0) {
+				b = nenner * -1;
+			}
+			if(zaehler < 0) {
+				a = zaehler * -1;
+			}
+			System.out.println("Moin " + ggT(a,b));
+		}
+	}
+	
+	static int ggT(int a, int b) {
+		int rest = a % b;
+		while(rest!=0) {
+			a=b;
+			b=rest;
+			rest = a % b;
+		}
+		return b;
+	}
+	
+	/*
+	static int ggT(int a, int b) {
+		int rest = a % b;
+		if (rest != 0) {
+			ggT(b, rest);
+		}
+		System.out.println(b);
+		return b;
+	}
+	*/
 }
