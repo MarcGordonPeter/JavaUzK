@@ -82,6 +82,7 @@ public class Bruch {
 		}
 	}
 	
+	/*
 	static int ggT(int a, int b) {
 		int rest = a % b;
 		while(rest!=0) {
@@ -91,8 +92,8 @@ public class Bruch {
 		}
 		return b;
 	}
+	*/
 	
-	/*
 	static int ggT(int a, int b) {
 		int rest = a % b;
 		if (rest != 0) {
@@ -101,5 +102,5 @@ public class Bruch {
 		System.out.println(b);
 		return b;
 	}
-	*/
+	
 }
