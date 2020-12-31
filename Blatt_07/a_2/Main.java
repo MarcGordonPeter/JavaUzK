@@ -14,5 +14,28 @@ public class Main {
 		for(int i=0; i < p.length; i++) {
 			p[i].info();
 		}
+		
+		System.out.println("Bücher: ");
+		for(int i=0; i < p.length; i++) {
+			if(p[i] instanceof Buch) {
+				p[i].info();
+			}
+		}
+		
+		System.out.println("Softcover: ");
+		for(int i=0; i < p.length; i++) {
+			if(p[i] instanceof Softcover) {
+				p[i].info();
+			}
+		}
+		
+		System.out.println("Hardcover: ");
+		for(int i=0; i < p.length; i++) {
+			if(p[i] instanceof Hardcover) {
+				p[i].info();
+				Hardcover h = (Hardcover) p[i];
+				System.out.println("\tEinbanddicke: " + h.einbanddicke + "mm.");
+			}
+		}
 	}
 }
