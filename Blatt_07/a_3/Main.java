@@ -3,7 +3,7 @@ package a_3;
 public class Main {
 	
 	public static void main(String[]args) {
-		int n = 0;
+		int n = 2;
 		System.out.println(rekursivFakultaet(n));
 		System.out.println(iterativFakultaet(n));
 	}
@@ -21,10 +21,9 @@ public class Main {
 	}
 	
 	static int rekursivFakultaet(int n) {
-		if (n == 1 || n==0){
+		if (n==1 || n==0){
 	        return 1;
 	    }
-	    int res = rekursivFakultaet(n - 1);
-	    return res * n;
+	    return (rekursivFakultaet(n-1)*n);
 	}
 }
