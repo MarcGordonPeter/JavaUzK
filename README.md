@@ -2,7 +2,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fde.wikipedia.org%2Fwiki%2FUniversit%25C3%25A4t_zu_K%25C3%25B6ln&psig=AOvVaw2dEfG7dsh4BiNubyRbYbuB&ust=1610024155602000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPi3y8Gth-4CFQAAAAAdAAAAABAD">
+  <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/SiegelUniK%C3%B6ln.svg/1920px-SiegelUniK%C3%B6ln.svg.png">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
