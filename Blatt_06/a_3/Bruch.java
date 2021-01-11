@@ -78,7 +78,7 @@ public class Bruch {
 			if(zaehler < 0) {
 				a = zaehler * -1;
 			}
-			System.out.println("Moin " + ggT(a,b));
+			System.out.println("ggT: " + ggT(a,b));
 		}
 	}
 	
