@@ -7,7 +7,7 @@ public class Main {
 			System.out.println(rekursivFibonacci(i));
 		}
 	}
-	
+	 // Möglichkeit1
 	static int iterativFibonacci(int n) {
 		int a1 = 1;
 		int a2 = 1;
@@ -41,6 +41,8 @@ public class Main {
 			return an;
 		}
 	}
+	
+	//Möglichkeit2
 	
 	static int rekursivFibonacci(int n) {
 		return n<2 ? 1 : rekursivFibonacci(n-1)+rekursivFibonacci(n-2); 

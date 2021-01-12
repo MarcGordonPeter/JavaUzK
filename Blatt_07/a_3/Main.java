@@ -8,6 +8,7 @@ public class Main {
 		System.out.println(iterativFakultaet(n));
 	}
 	
+	//Möglichkeit1
 	static int fakultaetIterativ(int n) {
 		int j = 1;
 
@@ -25,6 +26,8 @@ public class Main {
 		return 1;
 	}
 	
+	
+	//Möglichkeit2
 	static int iterativFakultaet(int n) {
 		if(n==0) {
 			return 1;
