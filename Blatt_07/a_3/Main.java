@@ -8,6 +8,23 @@ public class Main {
 		System.out.println(iterativFakultaet(n));
 	}
 	
+	static int fakultaetIterativ(int n) {
+		int j = 1;
+
+		for(int i=1; i<=n; i++) {
+			j *= i;
+		}
+		
+		return j;
+	}
+	
+	static int fakultaetRekursiv(int n) {
+		if(n > 1) {
+			return fakultaetRekursiv(n-1)*n;
+		}
+		return 1;
+	}
+	
 	static int iterativFakultaet(int n) {
 		if(n==0) {
 			return 1;

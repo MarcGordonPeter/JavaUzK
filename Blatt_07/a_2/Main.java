@@ -33,8 +33,8 @@ public class Main {
 		for(int i=0; i < p.length; i++) {
 			if(p[i] instanceof Hardcover) {
 				p[i].info();
-				Hardcover h = (Hardcover) p[i];
-				System.out.println("\tEinbanddicke: " + h.einbanddicke + "mm.");
+				Hardcover h = (Hardcover)p[i];
+				System.out.println("Einbanddicke ist " + h.einbanddicke);
 			}
 		}
 	}
