@@ -19,12 +19,7 @@ public class Array {
 	}
 	
 	public Array erzeuge_kopie() {
-		int[]arrKopie = new int[arr.length];
-		for(int i=0;i<arr.length;i++) {
-			arrKopie[i] = arr[i];
-		}
-		Array neuesArray = new Array(arrKopie);
-		return neuesArray;
+		return new Array(arr);
 	}
 	
 	public void nulle_vielfache_von(int a) {
