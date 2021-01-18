@@ -12,4 +12,6 @@ public class Hardcover extends Buch {
 		super.info();
 		System.out.println("\tTyp: Hardcover");
 	}
+	
+	public void test() {}
 }
