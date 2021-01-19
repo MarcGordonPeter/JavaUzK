@@ -9,15 +9,16 @@ public class Main {
 	}
 
 	public static void mergesort(int[] arr, int tiefe) {
-		if (arr.length == 0 || arr.length == 1) {
-			return;
-		}
 		String praefix = "";
 		for (int i=0; i<tiefe;i++) {
 			praefix += "\t";
 		}
 		System.out.print(praefix);
 		print(arr);
+		
+		if (arr.length == 0 || arr.length == 1) {
+			return;
+		}
 		
 		int half = arr.length / 2;
 		int[] left_arr = new int[half], right_arr = new int[arr.length - half];
@@ -31,6 +32,7 @@ public class Main {
 		}
 		mergesort(left_arr, tiefe++);
 		mergesort(right_arr, tiefe++);
+		
 		
 		/* fuege sortierte Arrays left_arr und right_arr zusammen */ 
 		for (int i = 0, j = 0, k = 0; i < arr.length; i++) {
