@@ -28,26 +28,30 @@ public class Uhrzeit {
 	}
 	
 	public boolean ist_spater_oder_gleich(Uhrzeit z) {
-		int ges_sek = z.h * 3600 + z.m * 60 + z.s;
-		int ver_sek = this.h * 3600 + this.m * 60 + this.s;
+		int ges_sek = getSek(z);
+		int ver_sek = getSek(this);
 		return ver_sek >= ges_sek;
 	}
 	
 	public boolean ist_frueher_oder_gleich(Uhrzeit z) {
-		int ges_sek = z.h * 3600 + z.m * 60 + z.s;
-		int ver_sek = this.h * 3600 + this.m * 60 + this.s;
+		int ges_sek = getSek(z);
+		int ver_sek = getSek(this);
 		return ver_sek <= ges_sek;
 	}
 
 	public boolean ist_gleich(Uhrzeit z) {
-		int ges_sek = z.h * 3600 + z.m * 60 + z.s;
-		int ver_sek = this.h * 3600 + this.m * 60 + this.s;
+		int ges_sek = getSek(z);
+		int ver_sek = getSek(this);
 		return ver_sek == ges_sek;
 	}
 	
 	public int abstand_sek(Uhrzeit z) {
-		int ges_sek = z.h * 3600 + z.m * 60 + z.s;
-		int ver_sek = this.h * 3600 + this.m * 60 + this.s;
+		int ges_sek = getSek(z);
+		int ver_sek = getSek(this);
 		return ver_sek - ges_sek;
+	}
+	
+	public int getSek(Uhrzeit uhr) {
+		return uhr.h * 3600 + uhr.m * 60 + uhr.s;
 	}
 }
