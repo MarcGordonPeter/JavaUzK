@@ -30,8 +30,8 @@ public class Main {
 				right_arr[i - half] = arr[i];
 			}
 		}
-		mergesort(left_arr, tiefe++);
-		mergesort(right_arr, tiefe++);
+		mergesort(left_arr, tiefe+1);
+		mergesort(right_arr, tiefe+1);
 		
 		
 		/* fuege sortierte Arrays left_arr und right_arr zusammen */ 
