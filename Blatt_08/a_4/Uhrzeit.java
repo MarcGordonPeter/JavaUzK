@@ -48,7 +48,12 @@ public class Uhrzeit {
 	public int abstand_sek(Uhrzeit z) {
 		int ges_sek = getSek(z);
 		int ver_sek = getSek(this);
-		return ver_sek - ges_sek;
+		if(ver_sek > ges_sek) {
+			return ver_sek - ges_sek;
+		} else {
+			return ges_sek - ver_sek;
+		}
+		
 	}
 	
 	public int getSek(Uhrzeit uhr) {
