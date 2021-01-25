@@ -2,6 +2,7 @@ package main;
 
 import werkzeuge.HalloWelt;
 import werkzeuge.math.*;
+import werkzeuge.zahlen.*;
 
 public class Main {
 
@@ -17,5 +18,14 @@ public class Main {
 		
 		System.out.println(Fibonacci.berechne(12));
 		System.out.println(Fakultaet.berechne(6));
+		
+		Bruch a = new Bruch(2,3);
+		Bruch2 b = new Bruch2(2,3);
+		
+		a.print();
+		b.print();
+		
+		System.out.println(a.groesser_als(b));
+		System.out.println(b.kleiner_als(a));
 	}
 }
