@@ -23,13 +23,8 @@ public class Main {
 				FileReader fr = new FileReader(f);
 				FileWriter fw = new FileWriter(fneu);
 				while ((i = fr.read()) != -1) {
-					if(!((java.lang.Character.isSpaceChar(i)) || (java.lang.Character.getType(i) == TAB_INT))) {	
-						if(java.lang.Character.isUpperCase(i)) { //Workaround, wenn jemand direkt an den char an der Stelle i kommt, bitte melden :)
-							fw.write(java.lang.Character.toUpperCase(i));
-						} else {
-							fw.write(java.lang.Character.toLowerCase(i));
-						}
-						
+					if(i != ' ' && i != '\t') {
+						fw.write(i);
 					}
 				}
 				fr.close();
