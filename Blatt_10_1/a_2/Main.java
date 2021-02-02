@@ -9,24 +9,23 @@ public class Main {
 		
 		Einfach_verkettete_Liste liste = new Einfach_verkettete_Liste(arr);
 		
-		int start1 = (int) System.currentTimeMillis();
+		long start1 = System.currentTimeMillis();
 		for(int i=0; i < arr.length; i++) {
 			arr[i] = 0;
 		}
-		int ende1 = (int) System.currentTimeMillis();
+		long ende1 = System.currentTimeMillis();
 		
 		
-		int start2 = (int) System.currentTimeMillis();
+		long start2 = System.currentTimeMillis();
 		for(Knoten k = liste.kopf; k!= null; k = k.next) {
 			k.wert = 0;
 		}
-		int ende2 = (int) System.currentTimeMillis();
+		long ende2 = System.currentTimeMillis();
 		
 		System.out.println("Millisekunden seit 1970: " + System.currentTimeMillis());
 		System.out.println(ende1 - start1);
 		System.out.println(ende2 - start2);
 	}
-	
 	
 	
 	static int[] rand_million() {
