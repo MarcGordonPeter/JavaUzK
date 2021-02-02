@@ -1,8 +1,8 @@
 package a_1;
 
 public class Knoten {
-	int wert;
-	Knoten next;
+	public int wert;
+	public Knoten next;
 	
 	Knoten(int wert, Knoten next) {
 		this.wert = wert;

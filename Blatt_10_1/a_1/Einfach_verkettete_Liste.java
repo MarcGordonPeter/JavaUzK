@@ -1,7 +1,8 @@
 package a_1;
 
 public class Einfach_verkettete_Liste {
-	Knoten kopf;
+	
+	public Knoten kopf;
 	
 	public Einfach_verkettete_Liste(int w) {
 		kopf = new Knoten(w, null);
