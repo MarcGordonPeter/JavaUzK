@@ -1,8 +1,8 @@
 package werkzeuge.zahlen;
 
 public class Bruch {
-	int zaehler;
-	int nenner;
+	public int zaehler;
+	public int nenner;
 	
 	public Bruch() {
 		zaehler = 0;

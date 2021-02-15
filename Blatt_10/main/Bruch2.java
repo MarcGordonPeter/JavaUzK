@@ -1,4 +1,6 @@
-package werkzeuge.zahlen;
+package main;
+
+import werkzeuge.zahlen.Bruch;
 
 public class Bruch2 extends Bruch {
 	
