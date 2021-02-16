@@ -22,8 +22,8 @@ public class Main {
 		int i = 0;
 		while (A.getAt(0) != null) {
 			Element minF = A.minF();
-			S_temp[i++] = new Termin(minF.a, s);
 			A.removeAt(minF.index);
+			S_temp[i++] = new Termin(minF.a, s);
 			s += minF.a.d;
 		}
 		return S_temp;
