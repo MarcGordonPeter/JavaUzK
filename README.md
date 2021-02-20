@@ -12,6 +12,5 @@
     <br />
   </p>
 </p>
-![Visitor Count](https://profile-counter.glitch.me/{MarcGordonPeter}/count.svg)
 
 
